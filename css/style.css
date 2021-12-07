@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+}
+body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  /* background: #000; */
+  background-image: url("../img/pexels-anna-tis-6341164.jpg");
+  background-size: cover;
+}
+.container .butt1{
+  position:absolute;
+  top: 100px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(69, 15, 216);
+  border-radius: 10pt;
+  background-color: #111;
+  color: #666;
+}
+.container{
+  position: relative;
+  width: 400px;
+  background-size: cover;
+  background: rgba(17, 17, 17, 0.897);
+  padding: 30px 30px;
+  border: 1px solid rgb(69, 15, 216);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .post{
+  display: none;
+}
+
+.container .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.container .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .edit:hover{
+  text-decoration: underline;
+}
+.container .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+  content: "I just love it ";
+}
+.container form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid rgb(69, 15, 216);
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button{
+  height: 120%;
+  width: 100%;
+  border: 1px solid rgb(69, 15, 216);
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover{
+  background: #1b1b1b;
+}
+/* ========================== */
+h3,h5{
+    color: whitesmoke;
+}
+
+/* ========================== */
+.container1{
+  width: 400px;
+  height: 200px;
+  background: rgba(17, 17, 17, 0.589);
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+ svg{
+  font-size: 250px;
+  padding-top: 11%;
+}
+.copy{
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-dasharray: 8% 30%;
+  stroke-dashoffset: 0%;
+  animation: textanimation 6s linear infinite;
+}
+@keyframes textanimation{
+  100%{
+    stroke-dashoffset: -35%;
+  }
+}
+.copy1{
+stroke: #673ab7;
+animation-delay: -1s;
+}
+.copy2{
+  stroke: #e91e63;
+  animation-delay: -2s;
+  }
+  .copy3{
+    stroke: #ff5722;
+    animation-delay: -3s;
+    }
+    .copy4{
+      stroke: #f44336;
+      animation-delay: -4s;
+      }
+      .copy5{
+        stroke: #ffc107;
+        animation-delay: -5s;
+        }
+
+
+
+
+@media (min-width: 200px) and (max-width: 990px)
+{
+  .container{
+    width: 300px;
+
+  }
+  .star-widget label{
+    font-size: 30px;
+    padding: 5px;
+
+   
+  }
+  .container1{
+    width: 300px;
+    height: 200px;
+   
+  }
+  svg{
+    font-size: 200px;
+    padding-top: 11%;
+  }
+
+
+}
+@media (min-width: 700px) and (max-width: 850px)
+{
+
+  
+  .container{
+    position: relative;
+    width: 500px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid rgb(69, 15, 216);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .star-widget label{
+    font-size: 50px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+
+}

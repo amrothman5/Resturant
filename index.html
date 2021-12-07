@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Trust Restusant</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link  rel="stylesheet" type="text/css" href="css/all.css">
+    <!-- <link rel="stylesheet" href="./css/fontawesome.css"> -->
+  </head>
+  <body>
+    <header>
+      <div class="container1  ">
+        <svg viewBox="0 0 1000 400 ">
+          <text id="mytext" x="50%" y="50%" text-anchor="middle" fill="none"> Trust</text>
+          <use xlink:href="#mytext" class="copy copy1"></use>
+          <use xlink:href="#mytext" class="copy copy2"></use>
+          <use xlink:href="#mytext" class="copy copy3"></use>
+          <use xlink:href="#mytext" class="copy copy4"></use>
+          <use xlink:href="#mytext" class="copy copy5"></use>
+        </svg>
+      </div>
+    </header>
+
+    <!-- <section>
+      <h3>مرحبا بك فى مطعم تراست</h3>
+      <h5>شكرا لك على تقيمك لمستوى مطعمك و أرجوا الاستمتاع بوجودك معنا</h5>
+    </section> -->
+    <div class="container">
+      <section>
+        <h3>مرحبا بك فى مطعم تراست</h3>
+        <h5> تقيمك يهمنا</h5>
+      </section>
+      <div class="post">
+        <div class="text">Thanks for rating us!</div>
+        <div class="edit">EDIT</div>
+        
+        <div style="margin-right: 100px;">
+               <a href="#"><input type="submit"  class="butt1"></input></a>   
+
+        </div>
+      </div>
+
+      <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+          <header></header>
+          <div class="textarea">
+            <textarea cols="30" placeholder="Describe your experience.."></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End your project here-->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript">
+      var a = document.getElementById('disc-50');
+      a.onclick = function () {
+        Clipboard_CopyTo("T9TTVSQB");
+        var div = document.getElementById('code-success');
+        div.style.display = 'block';
+        setTimeout(function () {
+          document.getElementById('code-success').style.display = 'none';
+        }, 900);
+      };
+
+      function Clipboard_CopyTo(value) {
+        var tempInput = document.createElement("input");
+        tempInput.value = value;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+      }
+    </script>
+    <!-- ========================================================== -->
+    <script>
+      const btn = document.querySelector("button");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      const text3 = document.querySelector("h3");
+      const text5 = document.querySelector("h5");
+      const button1 = document.querySelector("button1");
+      btn.onclick = ()=>{
+        text5.style.display = "none";
+        text3.style.display = "none";
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = ()=>{
+          widget.style.display = "block";
+          post.style.display = "none";
+          butt1.style.display="none";
+        }
+        return false;
+      }
+    </script>  
+  </body>
+</html>
