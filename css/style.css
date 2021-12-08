@@ -227,11 +227,11 @@ animation-delay: -1s;
 @media (min-width: 200px) and (max-width: 990px)
 {
   .container{
-    width: 300px;
-
+    position: relative;
+    width: 350px;
   }
   .star-widget label{
-    font-size: 32px;
+    font-size: 40px;
     padding: 5px;
   }
   .star-widget .btn{
@@ -242,7 +242,7 @@ animation-delay: -1s;
 
   }
   .container1{
-    width: 300px;
+    width: 350px;
     height: 200px;
    
   }
@@ -250,7 +250,15 @@ animation-delay: -1s;
     font-size: 200px;
     padding-top: 11%;
   }
-
+  form header{
+    width: 100%;
+    font-size: 30px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 15px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
 
 }
 @media (min-width: 700px) and (max-width: 850px)
