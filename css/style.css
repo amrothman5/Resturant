@@ -20,7 +20,7 @@ body{
   background-image: url("../img/pexels-anna-tis-6341164.jpg");
   background-size: cover;
 }
-.container .butt1{
+/* .container .butt1{
   position:absolute;
   top: 100px;
   width: 100px;
@@ -29,7 +29,81 @@ body{
   border-radius: 10pt;
   background-color: #111;
   color: #666;
+} */
+.butt1{
+  position: relative;
+  top: 100px;
+  display: none;
+  padding: 7px 30px;
+  color: #2196f3;
+  background:rgba(3, 2, 2, 0.897);
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  transition: 0.2s;
 }
+.butt1:hover{
+  color: #255784;
+  background:#2196f3;
+  box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3 ;
+  transition-delay: 1s ;
+  }
+  .butt1 span{
+    position: absolute;
+    display: block;
+  }
+  .butt1 span:nth-child(1){
+    top:0;
+    left:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+  }
+  .butt1:hover span:nth-child(1){
+    left:100%;
+    transition: 1s;
+  }
+  .butt1 span:nth-child(2){
+    top:-100%;
+    right:0px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+  }
+  .butt1:hover span:nth-child(2){
+    top:100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  .butt1 span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+  }
+  .butt1:hover span:nth-child(3){
+    right:100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  .butt1 span:nth-child(4)
+  {
+    bottom:-100%;
+    left:0px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+  }
+  .butt1:hover span:nth-child(4){
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }
+  /* ===================================================================== */
 .container{
   position: relative;
   width: 400px;
@@ -148,16 +222,16 @@ form .btn{
   margin: 15px 0px;
 }
 form .btn button{
-  height: 100%;
+  height: 25px;
   width: 100%;
   border: 1px solid rgb(112, 71, 228);
   border-radius: 5px;
   outline: none;
   background: #444;
   color: whitesmoke;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 7px;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -170,10 +244,6 @@ h3,h5{
     color: whitesmoke;
 }
 
-.btn .btn2{
-  height: 25px;
-  width: 75px;
-}
 /* ========================== */
 .container1{
   width: 400px;
@@ -222,17 +292,17 @@ animation-delay: -1s;
         }
 
 
-
-
 @media (min-width: 200px) and (max-width: 990px)
 {
   .container{
     position: relative;
-    width: 350px;
+    width: 340px;
+
   }
   .star-widget label{
     font-size: 40px;
     padding: 5px;
+    box-sizing: border-box;
   }
   .star-widget .btn{
     height: 50%;
@@ -242,8 +312,8 @@ animation-delay: -1s;
 
   }
   .container1{
-    width: 350px;
-    height: 200px;
+    width: 340px;
+    height: 150px;
    
   }
   svg{
@@ -260,6 +330,9 @@ animation-delay: -1s;
     transition: all 0.2s ease;
   }
 
+  .butt1{
+    width: 320px;
+  }
 }
 @media (min-width: 700px) and (max-width: 850px)
 {
